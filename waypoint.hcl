@@ -2,7 +2,9 @@ project = "foo"
 
 variable "name" {
   type = string
-  default = configdynamic("null", { static_value = "foo" })
+  default = configdynamic("null", {
+    static_value = "foo"
+  })
 }
 
 app "web" {
